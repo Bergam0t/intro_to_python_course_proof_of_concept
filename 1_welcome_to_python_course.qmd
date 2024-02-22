@@ -1,0 +1,43 @@
+--- 
+title: "Python Course - Welcome"
+format: dashboard
+filters:
+  - pyodide
+--- 
+
+
+Welcome to the intro to Python course!
+
+We'll be working with a browser-based version of Python called 'Pyodide' for the course - so you don't need to install a thing.
+
+Just look out for the green light at the top of the page - about 15 seconds after you load the page, Pyodide should be ready to go.
+
+Once it's ready, you can click the 'Run Code' button to get the code 
+
+```{pyodide-python}
+n = 3
+for i in range(n):
+  print(f"{3-i}...")
+
+print("Let's get ready to Python!")
+```
+
+Now, while some code in this course will be ready to run, a lot won't be. Usually it will look a bit more like this...
+
+```{pyodide-python}
+n = 3
+for i in _____(n):
+  print(______)
+
+print("Let's get ready to Python!")
+```
+
+If you try running that as-is, you'll get an error! If you haven't already, try clicking it now so you know what to expect. 
+
+
+
+## Projects
+
+Later on in the course, there are some extended projects that will allow you to work on a longer piece of code, often bringing together multiple concepts from across the course. 
+
+So that you don't lose your work if you close the page, these won't take place within the book. Instead, there will be a button that loads the exercise in a platform called Deepnote. If you make an account, you can save and return to that exercise whenever you want.
