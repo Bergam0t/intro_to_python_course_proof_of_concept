@@ -82,15 +82,15 @@ Now, as much as we'd like to be able to save your progress, that's not something
 So if you want to take any code with you before you exit or refresh, make sure to copy it and put it somewhere safe, like a google doc (or, even better, put it into a .py file and save it somewhere - but we'll talk more about those some other time)
 :::
 
+# {.unnumbered}
 
-
-## Projects {.unnumbered}
+# Projects {.unnumbered}
 
 Later on in the course, there are some extended projects that will allow you to work on a longer piece of code, often bringing together multiple concepts from across the course. 
 
 So that you don't lose your work if you close the page, these won't take place within the book. Instead, there will be a button that loads the exercise in a platform called Deepnote. If you make an account, you can save and return to that exercise whenever you want.
 
-## Ready? {.unnumbered}
+# Ready? {.unnumbered}
 
 Time to get started! Use the navigation menu down the left hand side of this page to navigate through the course. 
 

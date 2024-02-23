@@ -1,0 +1,116 @@
+--- 
+title: "Your First Python Code"
+format: 
+    html:
+        grid:
+            sidebar-width: 0px
+            body-width: 1600px
+            margin-width: 0px
+            gutter-width: 1.5rem
+filters:
+  - pyodide
+--- 
+
+::: {.panel-tabset}
+
+# print()
+
+::: {.grid}
+
+::: {.g-col-3}
+
+Now - let's start where it's traditional (and useful!) to start - printing an output out!
+
+We can do this with the `print()` function.
+
+In Python, a **function** will always be followed by a pair of brackets. Usually - but not always - you'll put something in them!
+
+Now, imagine I wanted to print the word **Cat** as my output. 
+
+The way I do this is `print("cat")`
+
+Notice that I surrounded the word **cat** with quotation marks. This is so Python doesn't start trying to work out what 'cat' is - instead it just recognises that it is a **string** - basically just a bit of text! 
+
+In this case, we want to print out the following words: **This is the first thing I'm printing on the Python course**. 
+
+:::
+  
+::: {.g-col-9}
+
+```{pyodide-python}
+print(______________________)
+```
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Click here for a hint
+
+Remember - you need to follow the structure `print("the words I want to print")`
+
+Make sure you wrap your words in quotation marks inside the brackets!
+:::
+  
+:::  
+
+
+::: {.callout-note collapse="true"}
+## Click here for the solution
+
+```{pyodide-python}
+print("cat")
+```
+:::
+
+
+
+:::
+
+
+
+# Variables
+
+
+::: {.grid}
+
+::: {.g-col-5}
+
+So now we know a very useful thing - how to print an output.
+
+You'll actually use this a lot, particularly in your early scripts - it's how you get Python to actually give you the results of your calculation! For example, if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful. 
+
+However, let's see what happens if we tell it to print that. 
+
+```{pyodide-python}
+print(2+2)
+```
+
+Clever, eh? And notice something important - we didn't put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it. 
+
+The author of this course has a very daft cat called Bob. So let's assign his name to the **variable** `cat`.
+
+Every time we then refer to the variable `cat` - and notice the lack of quotation marks - then we won't 
+
+:::
+  
+::: {.g-col-7}
+
+```{pyodide-python}
+cat = ____________
+print("Cat")
+print(cat)
+```
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Click here for a hint
+
+Remember - you need to follow the structure `print("the words I want to print")`
+
+Make sure you wrap your words in quotation marks inside the brackets!
+:::
+  
+:::  
+
+:::

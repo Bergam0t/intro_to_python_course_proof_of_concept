@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - hello_world.qmd
+    - that's_very_variable.qmd
 
 bibliography: references.bib
 
@@ -16,6 +17,4 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
-
 
