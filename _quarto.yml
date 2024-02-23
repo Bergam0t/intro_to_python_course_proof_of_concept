@@ -1,20 +1,18 @@
 project:
   type: book
-
 book:
-  title: "An Introduction to Python for Health"
-  author: "Sammi Rosser"
-  date: "22/02/2024"
+  title: An Introduction to Python for Health
+  author: Sammi Rosser
+  date: 22/02/2024
   chapters:
-    - index.qmd
-    - hello_world.qmd
-    - that's_very_variable.qmd
-
+  - index.qmd
+  - hello_world.qmd
+  - that's_very_variable.qmd
 bibliography: references.bib
-
 format:
   html:
     theme: cosmo
+    css: include/webex.css
+    include-after-body: include/webex.js
   pdf:
     documentclass: scrreprt
-

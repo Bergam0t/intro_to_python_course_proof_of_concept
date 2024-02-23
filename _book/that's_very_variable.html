@@ -229,7 +229,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"context":"interactive","message":"true","results":"markup","read-only":"false","classes":"","autorun":"","fig-width":7,"comment":"","label":"","fig-cap":"","dpi":72,"warning":"true","output":"true","fig-height":5,"out-width":"700px","out-height":""},"id":1,"code":"print(______________________)"}];
+globalThis.qpyodideCellDetails = [{"code":"print(______________________)","options":{"message":"true","read-only":"false","comment":"","warning":"true","fig-width":7,"context":"interactive","fig-height":5,"label":"","fig-cap":"","dpi":72,"out-height":"","out-width":"700px","classes":"","autorun":"","results":"markup","output":"true"},"id":1},{"code":"print(\"cat\")","options":{"message":"true","read-only":"false","comment":"","warning":"true","fig-width":7,"context":"interactive","fig-height":5,"label":"","fig-cap":"","dpi":72,"out-height":"","out-width":"700px","classes":"","autorun":"","results":"markup","output":"true"},"id":2},{"code":"print(2+2)","options":{"message":"true","read-only":"false","comment":"","warning":"true","fig-width":7,"context":"interactive","fig-height":5,"label":"","fig-cap":"","dpi":72,"out-height":"","out-width":"700px","classes":"","autorun":"","results":"markup","output":"true"},"id":3},{"code":"cat = ____________\nprint(\"Cat\")\nprint(cat)","options":{"message":"true","read-only":"false","comment":"","warning":"true","fig-width":7,"context":"interactive","fig-height":5,"label":"","fig-cap":"","dpi":72,"out-height":"","out-width":"700px","classes":"","autorun":"","results":"markup","output":"true"},"id":4}];
 
 
 </script>
@@ -393,6 +393,7 @@ globalThis._qpyodideGetInstance = function() {
 </script>
 
 
+<link rel="stylesheet" href="include/webex.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -453,7 +454,13 @@ globalThis._qpyodideGetInstance = function() {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#variables" id="toc-variables" class="nav-link active" data-scroll-target="#variables"><span class="header-section-number">3</span> Variables</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -505,14 +512,422 @@ globalThis._qpyodideGetInstance = function() {
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here for a hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Remember - you need to follow the structure <code>print("the words I want to print")</code></p>
+<p>Make sure you wrap your words in quotation marks inside the brackets!</p>
 </div>
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here for the solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="qpyodide-insertion-location-2"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="variables" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Variables</h1>
+<div class="grid">
+<div class="g-col-5">
+<p>So now we know a very useful thing - how to print an output.</p>
+<p>You’ll actually use this a lot, particularly in your early scripts - it’s how you get Python to actually give you the results of your calculation! For example, if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful.</p>
+<p>However, let’s see what happens if we tell it to print that.</p>
+<div id="qpyodide-insertion-location-3"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Clever, eh? And notice something important - we didn’t put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it.</p>
+<p>The author of this course has a very daft cat called Bob. So let’s assign his name to the <strong>variable</strong> <code>cat</code>.</p>
+<p>Every time we then refer to the variable <code>cat</code> - and notice the lack of quotation marks - then we won’t</p>
+</div>
+<div class="g-col-7">
+<div id="qpyodide-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here for a hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Remember - you need to follow the structure <code>print("the words I want to print")</code></p>
+<p>Make sure you wrap your words in quotation marks inside the brackets!</p>
+</div>
+</div>
+</div>
+</div>
+<p>:::</p>
 
 
+</section>
 
 </main> <!-- /main -->
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+  console.log(document.getElementsByClassName("webex-check"));
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+
+    check_answer_box_nodelist = this.parentNode.childNodes
+    console.log(check_answer_box_nodelist)
+    for (let i = 0; i < check_answer_box_nodelist.length; i++) {
+      var cl_inner = check_answer_box_nodelist[i].classList;
+      console.log("Nodelist", i, ":", cl_inner);
+      if (typeof cl_inner !== "undefined")
+        {
+          if (cl_inner.contains("feedback")) {
+            {/* console.log(cl_inner.contains("feedback")) */}
+            {/* console.log(check_answer_box_nodelist[i].style.display) */}
+            check_answer_box_nodelist[i].style.display = "block"
+          }
+        }
+
+      }
+
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+
+    check_answer_box_nodelist = this.parentNode.childNodes
+    console.log(check_answer_box_nodelist)
+    for (let i = 0; i < check_answer_box_nodelist.length; i++) {
+      var cl_inner = check_answer_box_nodelist[i].classList;
+      console.log("Nodelist", i, ":", cl_inner);
+      if (typeof cl_inner !== "undefined")
+        {
+          if (cl_inner.contains("feedback")) {
+            {/* console.log(cl_inner.contains("feedback")) */}
+            {/* console.log(check_answer_box_nodelist[i].style.display) */}
+            check_answer_box_nodelist[i].style.display = "none"
+          }
+        }
+
+      }
+
+  }
+
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+  {/* console.log(e) */}
+  {/* console.log(this) */}
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+
+  var feedback = (this.getAttribute("feedback"))
+
+  if (document.getElementById('feedbackDiv'+this.id) === null){
+
+    var feedbackDiv = document.createElement("p");
+    feedbackDiv.setAttribute("id", "feedbackDiv"+this.id);
+    feedbackDiv.setAttribute("class", "feedback");
+
+  } else {
+
+    var feedbackDiv = document.getElementById('feedbackDiv'+this.id)
+    feedbackDiv.innerHTML = "";
+
+  }
+
+  // Check if inside a 'check answers' box - if so and if answer box is
+  // currently unchecked, ensure feedback is hidden
+  if (this.parentElement.parentElement.classList.contains("unchecked")) {
+    {/* console.log(this.parentElement.parentElement.classList); */}
+    feedbackDiv.style.display = "none"
+  } else {
+    {/* console.log(this.parentElement.parentElement.classList); */}
+    feedbackDiv.style.display = "block"
+  }
+
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+    feedbackDiv.innerHTML = feedback;
+  	this.parentNode.insertAdjacentElement('afterend', feedbackDiv);
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+      feedbackDiv.innerHTML = feedback;
+  	  this.parentNode.insertAdjacentElement('afterend', feedbackDiv);
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+  var feedback = (this[this.selectedIndex].getAttribute("feedback"))
+
+  if (document.getElementById('feedbackDiv'+this.id) === null){
+
+    var feedbackDiv = document.createElement("p");
+    feedbackDiv.setAttribute("id", "feedbackDiv"+this.id);
+    feedbackDiv.setAttribute("class", "feedback");
+
+  } else {
+
+    var feedbackDiv = document.getElementById('feedbackDiv'+this.id)
+    feedbackDiv.innerHTML = "";
+
+  }
+
+  feedbackDiv.innerHTML = feedback;
+  this.parentNode.insertAdjacentElement('afterend', feedbackDiv);
+
+  // Check if inside a 'check answers' box - if so and if answer box is
+  // currently unchecked, ensure feedback is hidden
+  if (this.parentElement.parentElement.classList.contains("unchecked")) {
+    {/* console.log(this.parentElement.parentElement.classList); */}
+    feedbackDiv.style.display = "none"
+  } else {
+    {/* console.log(this.parentElement.parentElement.classList); */}
+    feedbackDiv.style.display = "block"
+  }
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+  var feedback = (checked_button.getAttribute("feedback"))
+  if (feedback !== null & feedback !== "<b></b>") { feedback = feedback + "</br></br>" }
+
+  if (document.getElementById('feedbackDiv'+this.id) === null){
+
+    var feedbackDiv = document.createElement("div");
+    feedbackDiv.setAttribute("id", "feedbackDiv"+this.id);
+    feedbackDiv.setAttribute("class", "feedback");
+
+  } else {
+
+      var feedbackDiv = document.getElementById('feedbackDiv'+this.id)
+      feedbackDiv.innerHTML = "";
+
+  }
+
+  const currentDiv = document.getElementById(this);
+  feedbackDiv.innerHTML = feedback;
+  this.insertAdjacentElement('afterend', feedbackDiv);
+
+    // Check if inside a 'check answers' box - if so and if answer box is
+  // currently unchecked, ensure feedback is hidden
+  if (this.parentElement.classList.contains("unchecked")) {
+      {/* console.log(this.parentElement.parentElement.classList); */}
+      feedbackDiv.style.display = "none"
+    } else {
+      {/* console.log(this.parentElement.parentElement.classList); */}
+      feedbackDiv.style.display = "block"
+    }
+
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+    console.log(check_sections[i])
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    // check_func removes the 'unchecked' class from box
+    // and updates the button text
+    // subsequently recheck all possible question funcs
+    // to ensure feedback gets shown or hidden as appropriate
+    btn.onclick = check_func;
+
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
