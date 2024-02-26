@@ -16,15 +16,21 @@
 
 # writing functions
 
-
+# getting data from sql databases
 
 # subsetting and filtering with pandas 
+
+# making new columns with pandas
+
+# common pandas patterns
+- my old faithful for generating patient 
 
 
 # grouped operations with pandas
 
 
 # simple statistics 
+
 
 # automatically creating spreadsheets
 
@@ -37,7 +43,7 @@
 
 # regular expressions
 
-# writing good code. - linting etc
+# writing good code. - linting, documentation, modularisation, etc
 
 # debugging
 
@@ -56,3 +62,4 @@
 # linear regression
 
 # web scraping
+
