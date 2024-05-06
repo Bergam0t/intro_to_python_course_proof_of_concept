@@ -11,13 +11,15 @@ filters:
   - pyodide
 --- 
 
+Welcome to the first page of the course! Click on the headings below to move through the different exercises.
+
 ::: {.panel-tabset}
 
 # print()
 
 ::: {.grid}
 
-::: {.g-col-3}
+::: {.g-col-6}
 
 Now - let's start where it's traditional (and useful!) to start - printing an output out!
 
@@ -25,23 +27,25 @@ We can do this with the `print()` function.
 
 In Python, a **function** will always be followed by a pair of brackets. Usually - but not always - you'll put something in them!
 
-Now, imagine I wanted to print the word **Cat** as my output. 
+Now, imagine I wanted to print the word **dog** as my output. 
 
-The way I do this is `print("cat")`
+The way I do this is `print("dog")`
 
-Notice that I surrounded the word **cat** with quotation marks. This is so Python doesn't start trying to work out what 'cat' is - instead it just recognises that it is a **string** - basically just a bit of text! 
+Notice that I surrounded the word **dog** with quotation marks. This is so Python doesn't start trying to work out what 'cat' is - instead it just recognises that it is a **string** - basically just a bit of text! 
 
 In this case, we want to print out the following words: **This is the first thing I'm printing on the Python course**. 
 
 :::
   
-::: {.g-col-9}
+::: {.g-col-6}
 
 ```{pyodide-python}
 print(______________________)
 ```
 
 :::
+
+:::  
 
 ::: {.callout-tip collapse="true"}
 ## Click here for a hint
@@ -51,20 +55,20 @@ Remember - you need to follow the structure `print("the words I want to print")`
 Make sure you wrap your words in quotation marks inside the brackets!
 :::
   
-:::  
+
 
 
 ::: {.callout-note collapse="true"}
 ## Click here for the solution
 
 ```{pyodide-python}
-print("cat")
+print("dog")
 ```
 :::
 
 
 
-:::
+
 
 
 
@@ -73,44 +77,68 @@ print("cat")
 
 ::: {.grid}
 
-::: {.g-col-5}
+::: {.g-col-6}
 
 So now we know a very useful thing - how to print an output.
 
-You'll actually use this a lot, particularly in your early scripts - it's how you get Python to actually give you the results of your calculation! For example, if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful. 
+You'll actually use this a lot, particularly in your early scripts - it's how you get Python to actually give you the results of your calculation! For example, generally if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful. 
 
-However, let's see what happens if we tell it to print that. 
+However, let's see what happens if we tell it to *print* that. 
 
 ```{pyodide-python}
 print(2+2)
 ```
 
-Clever, eh? And notice something important - we didn't put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it. 
+Clever, eh? And notice something important - we didn't put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it.
 
-The author of this course has a very daft cat called Bob. So let's assign his name to the **variable** `cat`.
+In comparison, if we put print in quotes, we'd get this output instead.
 
-Every time we then refer to the variable `cat` - and notice the lack of quotation marks - then we won't 
+```{pyodide-python}
+print("2+2")
+```
+
+The author of this course has a very daft dog called Monty. So let's assign his name to the **variable** `dog`.
+
+Every time we then refer to the variable `dog` - and notice the lack of quotation marks - then we won't get the word "dog" printed - we'll instead get the name of the specific dog that we've stored!
 
 :::
   
-::: {.g-col-7}
+::: {.g-col-6}
 
 ```{pyodide-python}
-cat = ____________
-print("Cat")
-print(cat)
+dog = ____________
+print("dog")
+print(dog)
 ```
 
 :::
 
+:::  
+
+
 ::: {.callout-tip collapse="true"}
 ## Click here for a hint
 
-Remember - you need to follow the structure `print("the words I want to print")`
+Remember - `"monty"` is different to `monty`.
 
-Make sure you wrap your words in quotation marks inside the brackets!
-:::
-  
-:::  
+You can use single quotation marks or double as long as they match. 
+
+`"dog"` or `'dog'` will work. 
+
+If you try copying and pasting quotation marks in from a program like Word, they might be 'curly' quotes - ones that have been made prettier for a document - and code doesn't like that! This is something to watch out for further down the line. 
 
 :::
+
+
+::: {.callout-note collapse="true"}
+## Click here for the solution
+
+```{pyodide-python}
+dog = "Monty"
+print("dog")
+print(dog)
+```
+:::
+
+:::
+

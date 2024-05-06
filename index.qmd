@@ -1,5 +1,119 @@
-# Preface {.unnumbered}
+--- 
+title: "Python Course - Welcome"
+format: dashboard
+filters:
+  - pyodide
+--- 
 
-This is a Quarto book.
+```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(echo = FALSE)
+library(webexercises)
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+# Uncomment to change widget colours:
+#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+```
+
+Welcome to the intro to Python course!
+
+We'll be working with a browser-based version of Python called 'Pyodide' for the course - so you don't need to install a thing.
+
+Just look out for the green light at the top of the page - about 15 seconds after you load the page, Pyodide should be ready to go.
+
+Once it's ready, you can click the 'Run Code' button to make the code activate - right within your browser, with the output appearing below the box of code! Magic, eh? 
+
+```{pyodide-python}
+n = 3
+for i in range(n):
+  print(f"{3-i}...")
+
+print("Let's get ready to Python!")
+```
+
+We call these little interactive blocks **code cells**. So if you see the term 'cell' used at any point, that's what it's referring to.
+
+Now, while some code in this course will be ready to run, a lot won't be. Usually it will look a bit more like the cell below. There are gaps you need to fill in indicated by ________. 
+
+If you try running that as-is, you'll get an error! 
+
+If you haven't already, try clicking it now so you know what to expect. 
+
+```{pyodide-python}
+n = 3
+for i in _____(n):
+  print(______)
+
+print("Let's get ready to Python!")
+```
+
+You can click into the code cell to change any and all code that's written there. For example, in the box below, try changing the name 'Bob' to your own name. Don't worry - it doesn't get sent anywhere! Make sure you don't get rid of the quotation marks around the name or it will break...
+
+```{pyodide-python}
+name = "Bob"
+
+print(f"Hi {name}! I'm so glad you're trying this course out.")
+```
+
+Now, we'd like you to have a good old go at doing this yourself first. 
+
+If you get really stuck, you can click on the 'hint' box, like the one below, to get unstuck.
+
+::: {.callout-tip collapse="true"}
+## Click here for a hint
+
+Now, usually I'd be a great hint for the exercise! But today I'm just a hint about hints.
+:::
+
+
+But if you're really completely stumped, never fear - the solution will be available too.
+
+::: {.callout-note collapse="true"}
+## Click here for the solution
+
+```{pyodide-python}
+n = 3
+for i in range(n):
+  print(f"{3-i}...")
+
+print("Let's get ready to Python!")
+```
+:::
+
+There are two more cool things to know about code cells before we get started properly. 
+
+If you have a go at an exercise and it just doesn't seem to be going right, you can reset the code without having to refresh the page. 
+
+Just click the little pair of arrows at the top right corner of the code cell. This will reset the code to its original state. Be careful - you can't undo this!
+
+But this is where the second button comes in - the two little boxes on top of each other are your copy button. Clicking that will copy all of the code in the code cell into your clipboard, so you can then paste this anywhere you want - your own notes, perhaps, or you can just keep it safe while you reset the code state. 
+
+::: {.callout-warning}
+Now, as much as we'd like to be able to save your progress, that's not something we can do right now :( 
+
+So if you want to take any code with you before you exit or refresh, make sure to copy it and put it somewhere safe, like a google doc (or, even better, put it into a .py file and save it somewhere - but we'll talk more about those some other time)
+:::
+
+# Other kinds of exercise {.unnumbered}
+
+Throughout this course, you won't just be writing code - there will be other sorts of questions scattered throughout to keep you on your toes. 
+
+Questions like this, for example. 
+
+- I am going to learn a lot: `r torf(TRUE, feedback=c("Yes! That's what we like to see.", "I look forward to proving you wrong!"))`
+
+- What is 1 + 3 x 2: `r fitb(7, num = TRUE, feedback="Not quite - think about the order of operations.")`
+
+- What has changed in the year 3000? `r longmcq(opts=c(answer = "Not much, but they live underwater", "Everything", "Nothing - I can't believe they don't have hoverboards yet"), feedback=c("Well done! I see you are a child of the 90s too.", "Go and listen to the definitive song on the subject by Busted and report back!", "Wait, really? They don't? Well, that's thoroughly disappointing."))`
+
+
+# Projects {.unnumbered}
+
+Later on in the course, there are some extended projects that will allow you to work on a longer piece of code, often bringing together multiple concepts from across the course. 
+
+So that you don't lose your work if you close the page, these won't take place within the book. Instead, there will be a button that loads the exercise in a platform called Deepnote. If you make an account, you can save and return to that exercise whenever you want.
+
+# Ready? {.unnumbered}
+
+Time to get started! Use the navigation menu down the left hand side of this page to navigate through the course. 
+
+Thanks for joining us - you'll be ready to use Python for good in no time! 
+
