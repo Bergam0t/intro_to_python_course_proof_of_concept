@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: docs
 book:
-  title: An Introduction to Python for Healthcare Services
+  title: Python for Healthcare Services
   author: Sammi Rosser
   chapters:
   - index.qmd

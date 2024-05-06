@@ -3,10 +3,12 @@ title: "Your First Python Code"
 format: 
     html:
         grid:
-            sidebar-width: 0px
+            sidebar-width: 150px
             body-width: 1600px
             margin-width: 0px
             gutter-width: 1.5rem
+        sidebar:
+          style: "floating"
 filters:
   - pyodide
 --- 
@@ -33,19 +35,15 @@ The way I do this is `print("dog")`
 
 Notice that I surrounded the word **dog** with quotation marks. This is so Python doesn't start trying to work out what 'cat' is - instead it just recognises that it is a **string** - basically just a bit of text! 
 
-In this case, we want to print out the following words: **This is the first thing I'm printing on the Python course**. 
-
 :::
   
 ::: {.g-col-6}
 
+Print out the following words: **This is the first thing I'm printing on the Python course**. 
+
 ```{pyodide-python}
 print(______________________)
 ```
-
-:::
-
-:::  
 
 ::: {.callout-tip collapse="true"}
 ## Click here for a hint
@@ -56,8 +54,6 @@ Make sure you wrap your words in quotation marks inside the brackets!
 :::
   
 
-
-
 ::: {.callout-note collapse="true"}
 ## Click here for the solution
 
@@ -67,54 +63,71 @@ print("dog")
 :::
 
 
+:::
 
+
+:::  
 
 
 
 
 # Variables
 
-
 ::: {.grid}
 
 ::: {.g-col-6}
 
-So now we know a very useful thing - how to print an output.
+Often when you are doing some code, you'll want to be able to refer to the same thing multiple times - but not have to write it out each time. 
 
-You'll actually use this a lot, particularly in your early scripts - it's how you get Python to actually give you the results of your calculation! For example, generally if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful. 
+For example, you might want to be able to store the identifier for a patient, then lookup several different bits of information about the same patient. Or maybe you want to set some start and end dates and run several queries against a database, using the same dates each time. 
 
-However, let's see what happens if we tell it to *print* that. 
+If we write these out manually each time, there's a good chance we'll make a mistake at some point. And the next time we want to do this in our code? We need to make sure we change it absolutely everywhere. Is there a better way?
 
-```{pyodide-python}
-print(2+2)
-```
+Well, we can use things called variables. That way we only have to set something - say **start_date** - once, and then every time we want to use our start_date in our code, we just need to refer back to **start_date** rather than writing out the full date every single time. 
 
-Clever, eh? And notice something important - we didn't put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it.
+So how can we do this? We can use an equals sign to *assign* the value of something to some kind of identifier like **start_date** or **name**. 
 
-In comparison, if we put print in quotes, we'd get this output instead.
+For example, I could write 
 
 ```{pyodide-python}
-print("2+2")
+name = "Bob"
 ```
+
+to create a **variable** called *name* with a **value** of *Bob*. 
+
+Notice that our variable - *name* - doesn't have quotation marks around it. This is important!
+
+But we do have quotation marks around Bob. That's because we need to tell Python that Bob is a *string* - a bit of text. 
+
+The magic is now I can print the value of the **variable** - and it doesn't print out `name`. Instead, it prints out `Bob` - because by *assigning* the value `Bob` to `name`, Python now knows that we actually want `Bob`! 
+
+(Note - you need to *run* the cell above first, or you'll get an error when you try to run the next cell!)
+
+```{pyodide-python}
+print(name)
+```
+
+Now this starts getting really powerful when we use it multiple times throughout our code.
+
+```{pyodide-python}
+print("Hello "  + name)
+print("What can I do for you today " + name + "?")
+print(name * 5)
+```
+
+:::
+
+::: {.g-col-6}
 
 The author of this course has a very daft dog called Monty. So let's assign his name to the **variable** `dog`.
 
-Every time we then refer to the variable `dog` - and notice the lack of quotation marks - then we won't get the word "dog" printed - we'll instead get the name of the specific dog that we've stored!
-
-:::
-  
-::: {.g-col-6}
+We'll then compare what happens when we run `print("dog")` and `print(dog)`. 
 
 ```{pyodide-python}
 dog = ____________
 print("dog")
 print(dog)
 ```
-
-:::
-
-:::  
-
 
 ::: {.callout-tip collapse="true"}
 ## Click here for a hint
@@ -140,5 +153,82 @@ print(dog)
 ```
 :::
 
+
 :::
 
+:::  
+
+
+
+
+# Doing the Hard Work for You!
+
+::: {.grid}
+
+::: {.g-col-6}
+
+So now we know a very useful thing - how to print an output.
+
+You'll actually use this a lot, particularly in your early scripts - it's how you get Python to actually give you the results of your calculation! For example, generally if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful. 
+
+However, let's see what happens if we tell it to *print* that. 
+
+```{pyodide-python}
+print(2+2)
+```
+
+Clever, eh? And notice something important - we didn't put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it.
+
+In comparison, if we put print in quotes, we'd get this output instead.
+
+```{pyodide-python}
+print("2+2")
+```
+
+
+Python can do any kind of sum for us! So let's get Python to do a slightly more complex one for us. 
+
+:::
+
+::: {.g-col-6}
+
+Can you get Python to calculate `5 + 4 times 20` and print out the answer?
+
+We're expecting the answer to be 85!
+
+```{pyodide-python}
+print(_________________)
+```
+
+::: {.callout-tip collapse="true"}
+## Click here for a hint
+
+
+In Python
+
+```
++ means plus
+- is minus
+* is multiply (e.g. 4 * 2 will equal 8)
+/ is divide (e.g. 8 / 2 will equal 4)
+^ is 'to the power of' (e.g. 2^3 is 2 * 2 * 2, which will equal 8)
+```
+
+:::
+
+
+::: {.callout-note collapse="true"}
+## Click here for the solution
+
+```{pyodide-python}
+print(5 + 4 * 20)
+```
+:::
+
+
+:::
+
+:::
+
+
+:::

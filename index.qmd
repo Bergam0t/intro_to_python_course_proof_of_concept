@@ -1,6 +1,12 @@
 --- 
-title: "Python Course - Welcome"
-format: dashboard
+title: "Welcome"
+format:
+    html:
+        grid:
+            sidebar-width: 150px
+            body-width: 1600px
+            margin-width: 0px
+            gutter-width: 1.5rem
 filters:
   - pyodide
 --- 
@@ -14,6 +20,27 @@ library(webexercises)
 ```
 
 Welcome to the intro to Python course!
+
+This is a course designed to teach you the Python programming language from scratch - but designed for the specific needs of the healthcare service sector. 
+
+We'll start with the basics, but by the end we'll be covering how to 
+
+- automate the generation of reports and spreadsheets
+- make great graphs
+- simulate patient pathways
+- forecast future demand
+- train machine learning models on big datasets
+- work with 'free text' (like clinical notes or patient reviews)
+
+and much more.
+
+::: {.callout-note}
+This course is currently just a proof of concept (and a work in progress). 
+
+If the format works well, it's intended that modules on the above will be developed over the next few years.
+:::
+
+## How the course works
 
 We'll be working with a browser-based version of Python called 'Pyodide' for the course - so you don't need to install a thing.
 
@@ -115,5 +142,5 @@ So that you don't lose your work if you close the page, these won't take place w
 
 Time to get started! Use the navigation menu down the left hand side of this page to navigate through the course. 
 
-Thanks for joining us - you'll be ready to use Python for good in no time! 
+Thanks for joining us - you'll be ready to use Python to make a difference in no time! 
 
