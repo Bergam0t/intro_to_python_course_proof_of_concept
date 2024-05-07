@@ -1,0 +1,22 @@
+--- 
+title: "Other Visualisation Libraries"
+format: 
+    html:
+        grid:
+            sidebar-width: 150px
+            body-width: 1600px
+            margin-width: 0px
+            gutter-width: 1.5rem
+        sidebar:
+          style: "floating"
+filters:
+  - pyodide
+--- 
+
+Coming Soon!
+
+Brief overview (maybe not code exercises - just interactive simple examples?) of
+
+- Seaborn
+- Altair
+- Bokeh

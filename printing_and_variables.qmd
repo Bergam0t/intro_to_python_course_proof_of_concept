@@ -23,9 +23,19 @@ Welcome to the first page of the course! Click on the headings below to move thr
 
 ::: {.g-col-6}
 
-Now - let's start where it's traditional (and useful!) to start - printing an output out!
+Let's start where it's traditional (and useful!) to start - printing an output out.
 
 We can do this with the `print()` function.
+
+A *function* is a bit of code that will perform a particular task. 
+
+Sometimes we write our own functions, but very often we'll be using a function that someone else has created. There are lots of functions that come built in with Python, and they can do things like 
+
+- print out a phrase or the result of a calculation
+- create a sequence of numbers
+- tell us how many numbers are in our sequence
+
+Instead of having to write out all of the code required to tell the computer how to do something, we can just refer to the relevant function instead.
 
 In Python, a **function** will always be followed by a pair of brackets. Usually - but not always - you'll put something in them!
 
@@ -33,13 +43,20 @@ Now, imagine I wanted to print the word **dog** as my output.
 
 The way I do this is `print("dog")`
 
-Notice that I surrounded the word **dog** with quotation marks. This is so Python doesn't start trying to work out what 'dog' is - instead it just recognises that it is a **string** - basically just a bit of text! 
+Notice that I surrounded the word **dog** with quotation marks. This is so Python doesn't start trying to work out what 'dog' is - instead it just recognises that it is something called a **string** - basically just a bit of text! 
 
 :::
   
 ::: {.g-col-6}
 
-Print out the following words: **This is the first thing I'm printing on the Python course**. 
+Print out the following words: **Hello World!**. 
+
+```{pyodide-python}
+print(______________________)
+```
+
+
+Print out the following words: **This is the second thing I'm printing on the Python course.**. 
 
 ```{pyodide-python}
 print(______________________)
@@ -51,6 +68,14 @@ print(______________________)
 Remember - you need to follow the structure `print("the words I want to print")`
 
 Make sure you wrap your words in quotation marks inside the brackets!
+
+You can use single quotation marks or double as long as they match - however, when you want to use an apostrophe, you will want to use double quotation marks for defining your string. Otherwise Python will get confused trying to match up which quotation mark belongs with which. 
+
+This will work: `print("Grocer's apostrophe's drive people mad!")`
+
+And this will work: `print('This sentence doesn't contain any apostrophes')`
+
+This won't work (and will return an error): `'I can't stop writing code!'`
 :::
   
 
@@ -58,12 +83,18 @@ Make sure you wrap your words in quotation marks inside the brackets!
 ## Click here for the solution
 
 ```{pyodide-python}
-print("dog")
+print("Hello World!")
+```
+
+```{pyodide-python}
+print("This is the second thing I'm printing on the Python course.")
 ```
 :::
 
 
 :::
+
+
 
 
 :::  
@@ -133,8 +164,6 @@ print(dog)
 ## Click here for a hint
 
 Remember - `"monty"` is different to `monty`.
-
-You can use single quotation marks or double as long as they match. 
 
 `"dog"` or `'dog'` will work. 
 
@@ -211,7 +240,6 @@ In Python
 - is minus
 * is multiply (e.g. 4 * 2 will equal 8)
 / is divide (e.g. 8 / 2 will equal 4)
-^ is 'to the power of' (e.g. 2^3 is 2 * 2 * 2, which will equal 8)
 ```
 
 :::
@@ -231,4 +259,30 @@ print(5 + 4 * 20)
 :::
 
 
+
+
+
+
+
+# print()
+
+::: {.grid}
+
+::: {.g-col-6}
+
+# end grid col
 :::
+
+::: {.g-col-6}
+
+# end grid col
+:::
+
+# end grid
+:::
+
+
+
+# close tabset
+:::
+

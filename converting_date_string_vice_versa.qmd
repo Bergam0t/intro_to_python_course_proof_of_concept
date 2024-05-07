@@ -1,0 +1,18 @@
+--- 
+title: "Converting Dates"
+format: 
+    html:
+        grid:
+            sidebar-width: 150px
+            body-width: 1600px
+            margin-width: 0px
+            gutter-width: 1.5rem
+        sidebar:
+          style: "floating"
+filters:
+  - pyodide
+--- 
+
+Coming Soon!
+
+- strftime and strptime

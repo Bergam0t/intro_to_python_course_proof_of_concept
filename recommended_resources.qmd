@@ -1,0 +1,14 @@
+--- 
+title: "Recommended Resources"
+format:
+    html:
+        grid:
+            sidebar-width: 150px
+            body-width: 1600px
+            margin-width: 0px
+            gutter-width: 1.5rem
+filters:
+  - pyodide
+--- 
+
+Coming Soon!

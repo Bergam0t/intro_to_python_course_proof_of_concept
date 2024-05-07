@@ -5,8 +5,67 @@ book:
   title: Python for Healthcare Services
   author: Sammi Rosser
   chapters:
-  - index.qmd
-  - that's_very_variable.qmd
+    - index.qmd
+    - part: "Getting Started"
+      chapters:
+      - printing_and_variables.qmd
+      - working_with_numbers.qmd
+    - part: "Controlling the flow"
+      chapters:
+      - if_statements.qmd
+      - for_loops.qmd
+      - while_loops.qmd
+    - part: "Data Containers"
+      chapters:
+      - lists.qmd
+      - dictionaries.qmd
+      - common_patterns_lists_dicts.qmd
+      - map.qmd
+    - part: "Working with Dates and Times"
+      chapters:
+      - date_concepts.qmd
+      - converting_date_string_vice_versa.qmd
+    - part: "Writing Functions"
+      chapters:
+      - simple_functions.qmd
+      - advanced_functions.qmd
+      - lambda_functions.qmd
+    - part: "Working with Tabular Data"
+      chapters: 
+      - intro_to_pandas.qmd
+      - importing_data_files_pandas.qmd
+      - filtering_dataframes.qmd
+      - adding_columns.qmd
+      - merging_dataframes.qmd
+      - extending_dataframes.qmd
+      - pandas_from_database_connections.qmd
+      - building_up_dataframes.qmd
+    - part: "Calculating Summary Statistics"
+      chapters:
+      - mean_median_mode.qmd
+      - measuring_variation.qmd
+    - part: "Visualising Data"
+      chapters:
+        - graph_types.qmd
+        - static_viz_matplotlib.qmd
+        - interactive_viz_plotly.qmd
+        - static_viz_plotnine.qmd 
+        - other_viz_libraries.qmd
+    - part: "Levelling Up Your Programming"
+      chapters:
+        - list_comprehensions.qmd
+        - testing.qmd
+    - part: "Object Oriented Programming"
+      chapters:
+        - oop_concepts.qmd
+        - simple_classes.qmd
+        - inheritance.qmd
+    - part: "Appendix 1 - Lesser-used Concepts"
+      chapters:
+        - sets_tuples.qmd
+    - recommended_resources.qmd
+    - next_steps.qmd
+
 bibliography: references.bib
 format:
   html:

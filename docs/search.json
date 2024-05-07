@@ -20,13 +20,397 @@
     ]
   },
   {
-    "objectID": "that's_very_variable.html",
-    "href": "that's_very_variable.html",
+    "objectID": "printing_and_variables.html",
+    "href": "printing_and_variables.html",
     "title": "2  Your First Python Code",
     "section": "",
-    "text": "Welcome to the first page of the course! Click on the headings below to move through the different exercises.\n\nprint()VariablesDoing the Hard Work for You!\n\n\n\n\nNow - let’s start where it’s traditional (and useful!) to start - printing an output out!\nWe can do this with the print() function.\nIn Python, a function will always be followed by a pair of brackets. Usually - but not always - you’ll put something in them!\nNow, imagine I wanted to print the word dog as my output.\nThe way I do this is print(\"dog\")\nNotice that I surrounded the word dog with quotation marks. This is so Python doesn’t start trying to work out what ‘dog’ is - instead it just recognises that it is a string - basically just a bit of text!\n\n\nPrint out the following words: This is the first thing I’m printing on the Python course.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nClick here for a hint\n\n\n\n\n\nRemember - you need to follow the structure print(\"the words I want to print\")\nMake sure you wrap your words in quotation marks inside the brackets!\n\n\n\n\n\n\n\n\n\nClick here for the solution\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nOften when you are doing some code, you’ll want to be able to refer to the same thing multiple times - but not have to write it out each time.\nFor example, you might want to be able to store the identifier for a patient, then lookup several different bits of information about the same patient. Or maybe you want to set some start and end dates and run several queries against a database, using the same dates each time.\nIf we write these out manually each time, there’s a good chance we’ll make a mistake at some point. And the next time we want to do this in our code? We need to make sure we change it absolutely everywhere. Is there a better way?\nWell, we can use things called variables. That way we only have to set something - say start_date - once, and then every time we want to use our start_date in our code, we just need to refer back to start_date rather than writing out the full date every single time.\nSo how can we do this? We can use an equals sign to assign the value of something to some kind of identifier like start_date or name.\nFor example, I could write\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nto create a variable called name with a value of Bob.\nNotice that our variable - name - doesn’t have quotation marks around it. This is important!\nBut we do have quotation marks around Bob. That’s because we need to tell Python that Bob is a string - a bit of text.\nThe magic is now I can print the value of the variable - and it doesn’t print out name. Instead, it prints out Bob - because by assigning the value Bob to name, Python now knows that we actually want Bob!\n(Note - you need to run the cell above first, or you’ll get an error when you try to run the next cell!)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNow this starts getting really powerful when we use it multiple times throughout our code.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nThe author of this course has a very daft dog called Monty. So let’s assign his name to the variable dog.\nWe’ll then compare what happens when we run print(\"dog\") and print(dog).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nClick here for a hint\n\n\n\n\n\nRemember - \"monty\" is different to monty.\nYou can use single quotation marks or double as long as they match.\n\"dog\" or 'dog' will work.\nIf you try copying and pasting quotation marks in from a program like Word, they might be ‘curly’ quotes - ones that have been made prettier for a document - and code doesn’t like that! This is something to watch out for further down the line.\n\n\n\n\n\n\n\n\n\nClick here for the solution\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nSo now we know a very useful thing - how to print an output.\nYou’ll actually use this a lot, particularly in your early scripts - it’s how you get Python to actually give you the results of your calculation! For example, generally if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful.\nHowever, let’s see what happens if we tell it to print that.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nClever, eh? And notice something important - we didn’t put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it.\nIn comparison, if we put print in quotes, we’d get this output instead.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nPython can do any kind of sum for us! So let’s get Python to do a slightly more complex one for us.\n\n\nCan you get Python to calculate 5 + 4 times 20 and print out the answer?\nWe’re expecting the answer to be 85!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nClick here for a hint\n\n\n\n\n\nIn Python\n+ means plus\n- is minus\n* is multiply (e.g. 4 * 2 will equal 8)\n/ is divide (e.g. 8 / 2 will equal 4)\n^ is 'to the power of' (e.g. 2^3 is 2 * 2 * 2, which will equal 8)\n\n\n\n\n\n\n\n\n\nClick here for the solution\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "text": "Welcome to the first page of the course! Click on the headings below to move through the different exercises.\n\nprint()VariablesDoing the Hard Work for You!print()close tabset\n\n\n\n\nLet’s start where it’s traditional (and useful!) to start - printing an output out.\nWe can do this with the print() function.\nA function is a bit of code that will perform a particular task.\nSometimes we write our own functions, but very often we’ll be using a function that someone else has created. There are lots of functions that come built in with Python, and they can do things like\n\nprint out a phrase or the result of a calculation\ncreate a sequence of numbers\ntell us how many numbers are in our sequence\n\nInstead of having to write out all of the code required to tell the computer how to do something, we can just refer to the relevant function instead.\nIn Python, a function will always be followed by a pair of brackets. Usually - but not always - you’ll put something in them!\nNow, imagine I wanted to print the word dog as my output.\nThe way I do this is print(\"dog\")\nNotice that I surrounded the word dog with quotation marks. This is so Python doesn’t start trying to work out what ‘dog’ is - instead it just recognises that it is something called a string - basically just a bit of text!\n\n\nPrint out the following words: Hello World!.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nPrint out the following words: This is the second thing I’m printing on the Python course..\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nClick here for a hint\n\n\n\n\n\nRemember - you need to follow the structure print(\"the words I want to print\")\nMake sure you wrap your words in quotation marks inside the brackets!\nYou can use single quotation marks or double as long as they match - however, when you want to use an apostrophe, you will want to use double quotation marks for defining your string. Otherwise Python will get confused trying to match up which quotation mark belongs with which.\nThis will work: print(\"Grocer's apostrophe's drive people mad!\")\nAnd this will work: print('This sentence doesn't contain any apostrophes')\nThis won’t work (and will return an error): 'I can't stop writing code!'\n\n\n\n\n\n\n\n\n\nClick here for the solution\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nOften when you are doing some code, you’ll want to be able to refer to the same thing multiple times - but not have to write it out each time.\nFor example, you might want to be able to store the identifier for a patient, then lookup several different bits of information about the same patient. Or maybe you want to set some start and end dates and run several queries against a database, using the same dates each time.\nIf we write these out manually each time, there’s a good chance we’ll make a mistake at some point. And the next time we want to do this in our code? We need to make sure we change it absolutely everywhere. Is there a better way?\nWell, we can use things called variables. That way we only have to set something - say start_date - once, and then every time we want to use our start_date in our code, we just need to refer back to start_date rather than writing out the full date every single time.\nSo how can we do this? We can use an equals sign to assign the value of something to some kind of identifier like start_date or name.\nFor example, I could write\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nto create a variable called name with a value of Bob.\nNotice that our variable - name - doesn’t have quotation marks around it. This is important!\nBut we do have quotation marks around Bob. That’s because we need to tell Python that Bob is a string - a bit of text.\nThe magic is now I can print the value of the variable - and it doesn’t print out name. Instead, it prints out Bob - because by assigning the value Bob to name, Python now knows that we actually want Bob!\n(Note - you need to run the cell above first, or you’ll get an error when you try to run the next cell!)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNow this starts getting really powerful when we use it multiple times throughout our code.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nThe author of this course has a very daft dog called Monty. So let’s assign his name to the variable dog.\nWe’ll then compare what happens when we run print(\"dog\") and print(dog).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nClick here for a hint\n\n\n\n\n\nRemember - \"monty\" is different to monty.\n\"dog\" or 'dog' will work.\nIf you try copying and pasting quotation marks in from a program like Word, they might be ‘curly’ quotes - ones that have been made prettier for a document - and code doesn’t like that! This is something to watch out for further down the line.\n\n\n\n\n\n\n\n\n\nClick here for the solution\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\nSo now we know a very useful thing - how to print an output.\nYou’ll actually use this a lot, particularly in your early scripts - it’s how you get Python to actually give you the results of your calculation! For example, generally if we just run the code 2 + 2, Python will do the calculation, but not tell us the answer. Not very helpful.\nHowever, let’s see what happens if we tell it to print that.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nClever, eh? And notice something important - we didn’t put quotation marks around 2+2 when we put it in the print statement. This is because print is actually pretty smart - you can put more than just a string in your print statement and Python will work out what to do with it.\nIn comparison, if we put print in quotes, we’d get this output instead.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nPython can do any kind of sum for us! So let’s get Python to do a slightly more complex one for us.\n\n\nCan you get Python to calculate 5 + 4 times 20 and print out the answer?\nWe’re expecting the answer to be 85!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nClick here for a hint\n\n\n\n\n\nIn Python\n+ means plus\n- is minus\n* is multiply (e.g. 4 * 2 will equal 8)\n/ is divide (e.g. 8 / 2 will equal 4)\n\n\n\n\n\n\n\n\n\nClick here for the solution\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\n\n\n\n3 end grid col\n\n\n4 end grid col\n\n\n5 end grid",
     "crumbs": [
+      "Getting Started",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Your First Python Code</span>"
+    ]
+  },
+  {
+    "objectID": "working_with_numbers.html",
+    "href": "working_with_numbers.html",
+    "title": "3  Working With Numbers",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Working With Numbers</span>"
+    ]
+  },
+  {
+    "objectID": "if_statements.html",
+    "href": "if_statements.html",
+    "title": "4  If Statements",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Controlling the flow",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>If Statements</span>"
+    ]
+  },
+  {
+    "objectID": "for_loops.html",
+    "href": "for_loops.html",
+    "title": "5  For Loops",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Controlling the flow",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>For Loops</span>"
+    ]
+  },
+  {
+    "objectID": "while_loops.html",
+    "href": "while_loops.html",
+    "title": "6  While Loops",
+    "section": "",
+    "text": "Coming soon!",
+    "crumbs": [
+      "Controlling the flow",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>While Loops</span>"
+    ]
+  },
+  {
+    "objectID": "lists.html",
+    "href": "lists.html",
+    "title": "7  Lists",
+    "section": "",
+    "text": "Coming Soon!\n\nWhat’s a list\nCreating lists\nAccessing list elements",
+    "crumbs": [
+      "Data Containers",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Lists</span>"
+    ]
+  },
+  {
+    "objectID": "dictionaries.html",
+    "href": "dictionaries.html",
+    "title": "8  Dictionaries",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Data Containers",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Dictionaries</span>"
+    ]
+  },
+  {
+    "objectID": "common_patterns_lists_dicts.html",
+    "href": "common_patterns_lists_dicts.html",
+    "title": "9  Working with Lists and Dictionaries Together",
+    "section": "",
+    "text": "Coming Soon!\n\nList of dictionaries and why that’s useful",
+    "crumbs": [
+      "Data Containers",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Working with Lists and Dictionaries Together</span>"
+    ]
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "10  The Map Function",
+    "section": "",
+    "text": "Coming Soon!\n\nWhat’s a list\nCreating lists\nAccessing list elements",
+    "crumbs": [
+      "Data Containers",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>The Map Function</span>"
+    ]
+  },
+  {
+    "objectID": "date_concepts.html",
+    "href": "date_concepts.html",
+    "title": "11  Introduction to Dates",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Working with Dates and Times",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Introduction to Dates</span>"
+    ]
+  },
+  {
+    "objectID": "converting_date_string_vice_versa.html",
+    "href": "converting_date_string_vice_versa.html",
+    "title": "12  Converting Dates",
+    "section": "",
+    "text": "Coming Soon!\n\nstrftime and strptime",
+    "crumbs": [
+      "Working with Dates and Times",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Converting Dates</span>"
+    ]
+  },
+  {
+    "objectID": "simple_functions.html",
+    "href": "simple_functions.html",
+    "title": "13  Simple Functions",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Writing Functions",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Simple Functions</span>"
+    ]
+  },
+  {
+    "objectID": "advanced_functions.html",
+    "href": "advanced_functions.html",
+    "title": "14  Advanced Functions",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Writing Functions",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Advanced Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lambda_functions.html",
+    "href": "lambda_functions.html",
+    "title": "15  Lambda Functions",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Writing Functions",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lambda Functions</span>"
+    ]
+  },
+  {
+    "objectID": "intro_to_pandas.html",
+    "href": "intro_to_pandas.html",
+    "title": "16  Introduction to Pandas",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Introduction to Pandas</span>"
+    ]
+  },
+  {
+    "objectID": "importing_data_files_pandas.html",
+    "href": "importing_data_files_pandas.html",
+    "title": "17  Importing Data Files",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Importing Data Files</span>"
+    ]
+  },
+  {
+    "objectID": "filtering_dataframes.html",
+    "href": "filtering_dataframes.html",
+    "title": "18  Filtering Dataframes",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Filtering Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "adding_columns.html",
+    "href": "adding_columns.html",
+    "title": "19  Adding Columns",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Adding Columns</span>"
+    ]
+  },
+  {
+    "objectID": "merging_dataframes.html",
+    "href": "merging_dataframes.html",
+    "title": "20  Joining Dataframes",
+    "section": "",
+    "text": "Coming Soon! - .merge() - join types",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Joining Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "extending_dataframes.html",
+    "href": "extending_dataframes.html",
+    "title": "21  Extending Dataframes",
+    "section": "",
+    "text": "Coming Soon!\n\nbest practice for adding extra rows\nconcatenating dataframes",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Extending Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "pandas_from_database_connections.html",
+    "href": "pandas_from_database_connections.html",
+    "title": "22  Dataframes from database connections",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Dataframes from database connections</span>"
+    ]
+  },
+  {
+    "objectID": "building_up_dataframes.html",
+    "href": "building_up_dataframes.html",
+    "title": "23  Building Up Dataframes",
+    "section": "",
+    "text": "Coming Soon!\n\nCovering building dataframes from a list of dictionaries (powerful pattern for things like discrete event simulation results)",
+    "crumbs": [
+      "Working with Tabular Data",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Building Up Dataframes</span>"
+    ]
+  },
+  {
+    "objectID": "mean_median_mode.html",
+    "href": "mean_median_mode.html",
+    "title": "24  Mean, Median and Mode",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Calculating Summary Statistics",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Mean, Median and Mode</span>"
+    ]
+  },
+  {
+    "objectID": "measuring_variation.html",
+    "href": "measuring_variation.html",
+    "title": "25  Measuring Variation",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Calculating Summary Statistics",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Measuring Variation</span>"
+    ]
+  },
+  {
+    "objectID": "graph_types.html",
+    "href": "graph_types.html",
+    "title": "26  Graph types",
+    "section": "",
+    "text": "Coming soon!\n\nbar chart\nline chart\nscatter plot\nwhy not pie and donut",
+    "crumbs": [
+      "Visualising Data",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Graph types</span>"
+    ]
+  },
+  {
+    "objectID": "static_viz_matplotlib.html",
+    "href": "static_viz_matplotlib.html",
+    "title": "27  Static Visualisation with matplotlib",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Visualising Data",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Static Visualisation with matplotlib</span>"
+    ]
+  },
+  {
+    "objectID": "interactive_viz_plotly.html",
+    "href": "interactive_viz_plotly.html",
+    "title": "28  Interactive Visualisation with Plotly",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Visualising Data",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Interactive Visualisation with Plotly</span>"
+    ]
+  },
+  {
+    "objectID": "static_viz_plotnine.html",
+    "href": "static_viz_plotnine.html",
+    "title": "29  Static Visualisation with Plotnine",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Visualising Data",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Static Visualisation with Plotnine</span>"
+    ]
+  },
+  {
+    "objectID": "other_viz_libraries.html",
+    "href": "other_viz_libraries.html",
+    "title": "30  Other Visualisation Libraries",
+    "section": "",
+    "text": "Coming Soon!\nBrief overview (maybe not code exercises - just interactive simple examples?) of\n\nSeaborn\nAltair\nBokeh",
+    "crumbs": [
+      "Visualising Data",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Other Visualisation Libraries</span>"
+    ]
+  },
+  {
+    "objectID": "list_comprehensions.html",
+    "href": "list_comprehensions.html",
+    "title": "31  List Comprehensions",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Levelling Up Your Programming",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>List Comprehensions</span>"
+    ]
+  },
+  {
+    "objectID": "testing.html",
+    "href": "testing.html",
+    "title": "32  Writing Tests",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Levelling Up Your Programming",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Writing Tests</span>"
+    ]
+  },
+  {
+    "objectID": "oop_concepts.html",
+    "href": "oop_concepts.html",
+    "title": "33  OOP Concepts",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Object Oriented Programming",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>OOP Concepts</span>"
+    ]
+  },
+  {
+    "objectID": "simple_classes.html",
+    "href": "simple_classes.html",
+    "title": "34  Writing your First Classes",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Object Oriented Programming",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Writing your First Classes</span>"
+    ]
+  },
+  {
+    "objectID": "inheritance.html",
+    "href": "inheritance.html",
+    "title": "35  Inheritance",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "Object Oriented Programming",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Inheritance</span>"
+    ]
+  },
+  {
+    "objectID": "recommended_resources.html",
+    "href": "recommended_resources.html",
+    "title": "37  Recommended Resources",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Recommended Resources</span>"
+    ]
+  },
+  {
+    "objectID": "next_steps.html",
+    "href": "next_steps.html",
+    "title": "38  Next Steps",
+    "section": "",
+    "text": "Coming Soon!",
+    "crumbs": [
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Next Steps</span>"
     ]
   }
 ]
