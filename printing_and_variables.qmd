@@ -53,6 +53,10 @@ Notice that I surrounded the word **dog** with quotation marks. This is so Pytho
 
 Print out the following words: **Hello World!**. 
 
+::: {.callout-tip}
+Delete the `________` inside the brackets and replace this with the text we want to print. 
+:::
+
 ```{pyodide-python}
 print(______________________)
 ```
