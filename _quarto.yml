@@ -69,6 +69,7 @@ book:
 bibliography: references.bib
 format:
   html:
+    page-layout: full
     theme: cosmo
     css: include/webex.css
     include-after-body: include/webex.js

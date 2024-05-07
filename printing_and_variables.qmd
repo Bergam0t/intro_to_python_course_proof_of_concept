@@ -3,8 +3,8 @@ title: "Your First Python Code"
 format: 
     html:
         grid:
-            sidebar-width: 150px
-            body-width: 1600px
+            sidebar-width: 250px
+            body-width: 1800px
             margin-width: 0px
             gutter-width: 1.5rem
         sidebar:
@@ -49,6 +49,8 @@ Notice that I surrounded the word **dog** with quotation marks. This is so Pytho
   
 ::: {.g-col-6}
 
+::: {.callout-note appearance="minimal"}
+
 Print out the following words: **Hello World!**. 
 
 ```{pyodide-python}
@@ -91,6 +93,9 @@ print("This is the second thing I'm printing on the Python course.")
 ```
 :::
 
+
+<!-- # end code exercise -->
+:::
 
 :::
 
@@ -150,6 +155,8 @@ print(name * 5)
 
 ::: {.g-col-6}
 
+::: {.callout-note appearance="minimal"}
+
 The author of this course has a very daft dog called Monty. So let's assign his name to the **variable** `dog`.
 
 We'll then compare what happens when we run `print("dog")` and `print(dog)`. 
@@ -187,6 +194,7 @@ print(dog)
 
 :::  
 
+:::
 
 
 
@@ -214,26 +222,7 @@ In comparison, if we put print in quotes, we'd get this output instead.
 print("2+2")
 ```
 
-
 Python can do any kind of sum for us! So let's get Python to do a slightly more complex one for us. 
-
-:::
-
-::: {.g-col-6}
-
-Can you get Python to calculate `5 + 4 times 20` and print out the answer?
-
-We're expecting the answer to be 85!
-
-```{pyodide-python}
-print(_________________)
-```
-
-::: {.callout-tip collapse="true"}
-## Click here for a hint
-
-
-In Python
 
 ```
 + means plus
@@ -243,6 +232,30 @@ In Python
 ```
 
 :::
+
+::: {.g-col-6}
+
+::: {.callout-note appearance="minimal"}
+
+Can you get Python to calculate `5 + 4 times 20` and print out the answer?
+
+We're expecting the answer to be 85!
+
+```{pyodide-python}
+print(_________________)
+```
+
+
+::: {.callout-tip collapse="true"}
+## Click here for a hint
+
+You can write the whole sum in one go - you don't need to break it up into chunks.
+
+Don't forget - you don't need quotation marks when you want Python to actually print the answer!
+
+:::
+
+
 
 
 ::: {.callout-note collapse="true"}
@@ -258,31 +271,33 @@ print(5 + 4 * 20)
 
 :::
 
+:::
 
 
 
 
 
 
-# print()
+
+# fStrings
 
 ::: {.grid}
 
 ::: {.g-col-6}
 
-# end grid col
+<!-- # end grid col -->
 :::
 
 ::: {.g-col-6}
 
-# end grid col
+<!-- # end grid col -->
 :::
 
-# end grid
+<!-- # end grid -->
 :::
 
 
 
-# close tabset
+<!-- # close tabset -->
 :::
 
